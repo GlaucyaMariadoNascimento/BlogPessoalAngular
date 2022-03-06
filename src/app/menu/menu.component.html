@@ -4,12 +4,12 @@
   </button>
 
   <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-    <ul class="navbar-nav m-auto d-flex align-items-center">
+    <ul class="navbar-nav mr-auto d-flex align-items-center">
       <li class="nav-item active">
-      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.pajaris.com.br%2Flegenda-por-do-sol%2F&psig=AOvVaw2owNC3krNsyhIpK9j9hkEN&ust=1646325596582000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJD8gvbup_YCFQAAAAAdAAAAABAJ" alt="imagem do user" width="50px" class="img-fluid rounded-circle">
+      <img src="{{foto}}"  alt="imagem do user" width="50px" class="img-fluid rounded-circle">
       </li>
       <li class="nav-item pl-3">
-     <p class="m-0 font-weihrt-bold text-white fs-16">Nome do usuário</p>
+     <p class="m-0 font-weihrt-bold text-white fs-16">Olá, {{nome}}</p>
       </li>
       
       <li class="nav-item pl-3">
@@ -20,7 +20,7 @@
   </ul>
 
   <ul class="navbar-nav ml-auto d-flex align-items-center">
-      <a class="m-0 font-weihrt-bold text-white fs-16">Sair <i class="m-2 fa fa-sign-out" aria-hidden="true"></i></a>
+      <a (click)='sair()' class="m-0 font-weihrt-bold text-white fs-16">Sair <i class="m-2 fa fa-sign-out" aria-hidden="true"></i></a>
   </ul>
    
   </div>
